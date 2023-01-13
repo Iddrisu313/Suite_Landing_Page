@@ -1,129 +1,107 @@
-<!--Starting up the Page Content-->
+<!--Starting the Normal Layout of the Index html file-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="./index.css">
-    <title>Suite Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--Loading the Required Google Fonts and CSS link-->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
+
+  <title> Suite Page</title>
 </head>
 <body>
-    <div class="container">
+  <header class="container">
+    <a href="#"><img src="./assets/logo.svg" alt="suite"></a>
+    <button class="btn btn--header">Request Beta Access</button>
+  </header>
 
-        <!-- The Header Section -->
-        <header>
-            <div class="logo">
-                <img src="./assets/logo.svg" alt="logo icon">
-            </div>
-            <button class="btn header-btn">Request Beta Access</button>
-        </header>
+  <!--Starting Main Content of the Page-->
 
-        <!-- The Main Section -->
-        <main>
-            <div class="desktop-view">
-                <div class="tablet-config">
-                    <section class="mission">
-                        <div class="main-header">
-                            <div class="curved-line">
-                                <img class="curve" src="./assets/pattern-curved-line-1.svg" alt="curved line">
-                            </div>
-                            <p class="mission-statement"><span>A</span> <bold>super solution</bold>
-                                <br><span>for your</span> <bold>business.</bold>
-                            </p>
-                        </div>
-                        <p class="quote1">Our marketing and sales automations help you scale your outreach to
-                            get more leads for your company.
-                        </p>
-                        <button class="btn mission-btn">Request Beta Access</button>
-                    </section>
-                    <section class="hero">
-                        <div class="hero-img-container">
-                            <img class="mobile-hero-img" src="./assets/image-hero-landscape.png" alt="">
-                        </div>
-                        <div class="tablet-hero-img-container">
-                            <img class="tablet-hero-img" src="./assets/image-hero-portrait.png" alt="">
-                        </div>
-                        <div class="destktop-hero-img-container">
-                            <img class="desktop-hero-img" src="./assets/image-hero-portrait@2x.png" alt="">
-                        </div>
-                    </section>
-                </div>
-                <section class="stats">
-                    <div stats>
-                        <p class="bolded-stats">2K+</p>
-                        <p class="stat-texts">companies</p>
-                    </div>
-                    <div >
-                        <p class="bolded-stats">8</p>
-                        <p class="stat-texts">languages</p>
-                    </div>
-                    <div>
-                        <p class="bolded-stats">1.2M</p>
-                        <p class="stat-texts">leads</p>
-                    </div>
-                </section>
-            </div>
-            <section>
-                <div class="white-space">
-
-                </div>
-            </section>
-
-            <section class="testimonial">
-                
-                    <div class="testimonial-content">
-
-                        <div class="desktop-testimonial-1">
-                            <div class="jeremy-img-container">
-                                <img class="jeremy-img" src="./assets/image-jeremy-small.png" alt="">
-                            </div>
-                            <div class="blurred-bg">
-                                <img class="blurry" src="./assets/pattern-blur.svg" alt="blurred background">
-                            </div>
-                        </div>
-
-                        <div class="curved-line-2">
-                            <img  src="./assets/pattern-curved-line-2.svg" alt="">
-                        </div>
-                        
-                        <div class="desktop-testimonial-2">
-                            <p class="testimonial-title">
-                                <span>It just</span> <bold>works.</bold>
-                            </p>
-                            <p class="testimonial-body">
-                                “I really like how it is an all-in-one solution that handle many of
-                                the tasks that you would normally need separate tools to do the same
-                                job. This thing is a miracle worker.”
-                            </p>
-                            <div class="testimonial-name">
-                                <p class="upcase-bold">Jeremy Robinson</p>
-                                <p class="upcase-regular">CMO, Fylo </p>
-                            </div>
-                        </div>
-                    
-                    </div>
-            </section>
-        </main>
-
-        <!-- The Footer Section -->
-        <footer>
-            <div class="footer-logo">
-                <img src="./assets/logo.svg" alt="logo icon">
-            </div>
-            <p id="copyright"><span>copyright - Suite</span></p>
-            <div class="links">
-               <ul>
-                   <li><a href="#"><img src="./assets/icon-facebook.svg" alt=""></a></li>
-                   <li><a href="#"><img src="./assets/icon-twitter.svg" alt=""></a></li>
-                   <li><a href="#"><img src="./assets/icon-instagram.svg" alt=""></a></li>
-               </ul>
-            </div>
-        </footer>
+  <main>
+    <div class="hero container">
+      <section class="hero__content flow-content">
+        <h1 class="heading-xl">A<strong> super solution</strong> for your <strong>business</strong>.</h1>
+        <p class="body">
+          Our marketing and sales automations help you scale your outreach to
+          get more leads for your company.
+        </p>
+        <button class="btn btn--hero">Request Beta Access</button>
+      </section>
+      <picture class="hero-img">
+        <source srcset="./assets/image-hero-portrait@2x.webp" media="(min-width: 768px)">
+        <img src="./assets/image-hero-landscape@2x.webp" alt="" />
+      </picture>
+      <div class="metrics flow-content">
+        <section>
+          <h2 class="h2">2K+</h2>
+          <p class="label">Companies</p>
+        </section>
+        <section>
+          <h2 class="h2">8</h2>
+          <p class="label">Languages</p>
+        </section>
+        <section>
+          <h2 class="h2">1.2M</h2>
+          <p class="label">Leads</p>
+        </section>
+      </div>
     </div>
-    <div class="background"></div>
+
+    <div class="testimonial d-grid">
+      <picture class="testimonial-img">
+        <source srcset="./assets/image-jeremy-large@2x.webp" media="(min-width: 768px)">
+        <img src="./assets/image-jeremy-small@2x.webp" alt="" />
+      </picture>
+      <div class="testimonial__content">
+        <img src="./assets/pattern-curved-line-2.svg" alt="">
+        <section class="flow-content">
+          <h2 class="heading-l">It just works.</h2>
+          <p class="quote">
+            “I really like how it is an all-in-one solution that handle many of
+            the tasks that you would normally need separate tools to do the same
+            job. This thing is a miracle worker.”
+          </p>
+          <section>
+            <h3 class="heading-m">Jeremy Robinson</h3>
+            <h4 class="heading-s">CMO, Fylo</h4>
+          </section>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!--Footer Section of the Page-->
+
+  <footer>
+    <div class="container d-flex flow-content">
+      <a href="#"><img src="./assets/logo.svg" alt="suite"></a>
+      <small>Copyright - Suite</small>
+      <ul class="social-list">
+        <li class="social-item">
+          <a aria-label="Facebook" href="#" class="social-link">
+            <img src="./assets/icon-facebook.svg" alt="Facebook">
+          </a>
+        </li>
+        <li class="social-item">
+          <a aria-label="Twitter" href="#" class="social-link">
+            <img src="./assets/icon-twitter.svg" alt="Twitter">
+          </a>
+        </li>
+        <li class="social-item">
+          <a aria-label="Instagram" href="#" class="social-link">
+            <img src="./assets/icon-instagram.svg" alt="Instagram">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
 </body>
+
 </html>
